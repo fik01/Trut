@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Trut</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="img/logo1.png" alt="#">
+        <span>trut</span>
+    </div>
+    <h1>Social Network for ethical H4CK3R5</h1>
+
+    <div class="main-wrapper">
+        <form id="loginForm">
+            <h2>Welcome back!</h2>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" id="loginEmail" placeholder="niko.nikolic@mail.com">
+            </div>
+
+            <div>
+                <label>Password:</label>
+                <input type="password" name="password" id="loginPassword" placeholder="*******">
+            </div>
+
+            <div>
+                <button>Login</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="no-acc-register">
+        <p>Need an account?</p>
+        <button id="registerBtn">Join Now</button>
+    </div>
+
+    <div class="custom-modal">
+        <button id="closeModal">X</button>
+
+        <form id="registrationForm">
+            <h2>Signup :)</h2>
+
+            <div>
+                <label for="registerUsername">Username: *</label>
+                <input id="registerUsername" type="text" name="username" placeholder="niko.nikolic1">
+            </div>
+
+            <div>
+                <label for="registerEmail">Email: *</label>
+                <input id="registerEmail" type="text" name="email" placeholder="niko.nikolic@mail.com">
+            </div>
+
+            <div>
+                <label for="registerPassword">Password: *</label>
+                <input id="registerPassword" type="password" name="password" placeholder="*******">
+            </div>
+
+            <div>
+                <label for="registerPasswordAgain">Password again: *</label>
+                <input id="registerPasswordAgain" type="password" name="passwordAgain" placeholder="*******">
+            </div>
+
+            <div>
+                <button>Let's go!</button>
+            </div>        
+        </form>
+    </div>
+
+    <script src="js/Validator.js"></script>
+    <script src="js/Session.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

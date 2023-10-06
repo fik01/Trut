@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Trut</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="inner-container left-side">
+                    <img src="img/profile.jpg" alt="#" class="profile">
+
+                    <p><b id="username"></b></p>
+                    <p id="email"></p>
+
+                    <button id="editAccount">Edit</button>
+                    <button id="logOut">Logout</button>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="inner-container right-side">
+                    <form id="postForm">
+                        <textarea id="postContent" placeholder="Write something..."></textarea>
+                        <button>SEND</button>
+                    </form>
+
+                    <div id="allPostsWrapper"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-modal">
+        <button id="closeModal">X</button>
+
+        <form id="editForm">
+            <h2>Edit your profile</h2>
+
+            <div>
+                <label for="editUsername">Username:</label>
+                <input id="editUsername" type="text" name="username" placeholder="niko.nikolic1">
+            </div>
+
+            <div>
+                <label for="editEmail">Email:</label>
+                <input id="editEmail" type="text" name="email" placeholder="niko.nikolic@mail.com">
+            </div>
+
+            <div>
+                <button>Save</button>
+            </div>        
+        </form>
+
+        <hr>
+
+        <button id="deleteProfile">DELETE ACCOUNT</button>
+    </div>
+    
+    <script src="js/Session.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/Post.js"></script>
+    <script src="js/trut.js"></script>
+</body>
+</html>
