@@ -34,3 +34,5 @@ Technologies used:
 The complete backend is implemented using JavaScript and mockAPI.
 
 ![Screenshot](https://github.com/fik01/Trut/blob/main/login.png?raw=true)
+
+![Screenshot](https://github.com/fik01/Trut/blob/main/account.png?raw=true)
